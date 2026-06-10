@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="spices-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Blog & Guides | Patel Sahab Spices - Premium Pure Flavors</title>
+    
+    <!-- Tailwind CSS for high-end modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spiceRed: '#A61B1B',
+                        spiceGold: '#E8A317',
+                        spiceGreen: '#1D5C42',
+                        creamBG: '#FFFDF9'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #A61B1B 0%, #7A1212 50%, #1D5C42 100%);
+        }
+    </style>
+</head>
+<body class="bg-creamBG text-gray-800 font-sans selection:bg-spiceGold selection:text-white">
+
+    <!-- TOP HEADER BAR (Quick Contact & Updates) -->
+    <div class="bg-spiceRed text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    +91 99999 99999
+                </span>
+                <span class="hidden md:flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 00-2 2z"></path></svg>
+                    info@patelsahabspices.com
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-spiceGold text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider uppercase">100% Pure & Natural</span>
+                <a href="admin.html" class="hover:text-spiceGold transition-colors text-[11px] font-semibold underline">Admin Panel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION HEADER -->
+    <header class="bg-white border-b border-amber-50 sticky top-0 z-40 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Brand Logo: Patel Sahab Spices -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="bg-spiceRed text-white p-2.5 rounded-full shadow-md flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3l9 9-9 9M12 3L3 12l9 9"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-2xl font-extrabold tracking-tight text-spiceRed font-serif leading-none">PATEL SAHAB</span>
+                    <span class="text-[10px] tracking-[0.25em] font-bold text-gray-400 uppercase">Premium Spices & Herbs</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden lg:flex items-center space-x-1 font-semibold text-gray-700 text-sm">
+                <a href="index.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Home</a>
+                <a href="about.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">About Us</a>
+                <a href="products.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Our Spices</a>
+                <a href="quality.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Quality Standards</a>
+                <a href="infrastructure.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Infrastructure</a>
+                <a href="blog.html" class="px-3 py-2 text-spiceRed bg-amber-50/50 rounded-lg">Spice Blog</a>
+                <a href="faqs.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">FAQs</a>
+                <a href="contact.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="wholesale.html" class="bg-spiceRed hover:bg-red-800 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
+                    Wholesale / B2B RFQ
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="menu-toggle" class="lg:hidden p-2 rounded-md hover:bg-gray-100 text-gray-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-amber-50 px-4 py-4 space-y-2 shadow-inner">
+            <a href="index.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Home</a>
+            <a href="about.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">About Us</a>
+            <a href="products.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Our Spices</a>
+            <a href="quality.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Quality Standards</a>
+            <a href="infrastructure.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Infrastructure</a>
+            <a href="blog.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-bold text-spiceRed bg-amber-50">Spice Blog</a>
+            <a href="faqs.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">FAQs</a>
+            <a href="contact.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Contact Us</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col space-y-2">
+                <a href="wholesale.html" class="w-full bg-spiceRed text-white text-center py-3 rounded-xl text-sm font-bold shadow-md">B2B Sourcing Inquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO COVER STRIP -->
+    <section class="relative overflow-hidden luxury-gradient text-white py-16 lg:py-24 px-4">
+        <div class="absolute inset-0 bg-opacity-10 bg-[radial-gradient(#E8A317_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
+            <span class="text-spiceGold text-xs font-bold tracking-[0.25em] uppercase block">Patel Sahab Science & Tradition Guides</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight">
+                Spice Secrets & SEO Blog
+            </h1>
+            <p class="text-sm md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                Learn how to detect commercial adulterants, explore the therapeutic values of active curcumin, and understand global packaging safety.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEARCH & FILTER PANELS -->
+    <section class="py-8 bg-white border-b border-amber-50 px-4 sticky top-[73px] z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
+            <!-- Live Search -->
+            <div class="relative w-full lg:w-96">
+                <input 
+                    type="text" 
+                    id="blog-search" 
+                    oninput="applyBlogFilter()" 
+                    placeholder="Search articles by title or keyword..." 
+                    class="w-full bg-creamBG pl-10 pr-4 py-3 rounded-xl border border-amber-100 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-spiceGold placeholder-gray-400"
+                />
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">🔍</span>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="flex flex-wrap gap-2 w-full lg:w-auto" id="category-filters">
+                <button onclick="filterCategory('all')" class="cat-btn active bg-spiceRed text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all">All Guides</button>
+                <button onclick="filterCategory('purity')" class="cat-btn bg-creamBG text-gray-700 border border-amber-100 hover:bg-amber-50 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all">Purity Tests</button>
+                <button onclick="filterCategory('wellness')" class="cat-btn bg-creamBG text-gray-700 border border-amber-100 hover:bg-amber-50 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all">Wellness & Science</button>
+                <button onclick="filterCategory('packaging')" class="cat-btn bg-creamBG text-gray-700 border border-amber-100 hover:bg-amber-50 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all">Packaging & Safety</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG POSTS GRID -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+                
+                <!-- Blog 1 -->
+                <div class="blog-card bg-creamBG rounded-3xl border border-amber-50 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-category="wellness" data-keywords="turmeric haldi curcumin science healthy benefits">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-amber-300 to-spiceGold flex items-center justify-center text-6xl select-none">💛</div>
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] bg-amber-100 text-amber-900 font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Wellness & Science</span>
+                            <h3 class="text-xl font-serif font-bold text-gray-950">The Golden Chemistry of Pure Curcumin in Turmeric</h3>
+                            <p class="text-xs text-gray-500 line-clamp-3">Discover why commercial turmeric often lacks medicinal value and how Patel Sahab's cold grinding technology locks in vital curcumin percentages above 3.5%...</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBlogModal('blog-1')" class="text-spiceRed font-extrabold text-xs hover:text-red-800 transition-colors uppercase tracking-wider flex items-center gap-1">Read Full Guide ➔</button>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="blog-card bg-creamBG rounded-3xl border border-amber-50 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-category="purity" data-keywords="red chilli mirch powder adulteration test purity pure water">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-[#FF6B6B] to-spiceRed flex items-center justify-center text-6xl select-none">🌶️</div>
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] bg-red-100 text-spiceRed font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Purity Tests</span>
+                            <h3 class="text-xl font-serif font-bold text-gray-950">How to Identify Adulterants in Red Chilli Powder</h3>
+                            <p class="text-xs text-gray-500 line-clamp-3">A 2-minute water test to check for brick powder, dynamic dyes, or metal residues right inside your domestic kitchen without laboratory tools...</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBlogModal('blog-2')" class="text-spiceRed font-extrabold text-xs hover:text-red-800 transition-colors uppercase tracking-wider flex items-center gap-1">Read Full Guide ➔</button>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="blog-card bg-creamBG rounded-3xl border border-amber-50 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-category="purity" data-keywords="coriander dhania starch test potato pure green seed">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-emerald-200 to-spiceGreen flex items-center justify-center text-6xl select-none">🌿</div>
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] bg-green-100 text-spiceGreen font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Purity Tests</span>
+                            <h3 class="text-xl font-serif font-bold text-gray-950">Detecting Added Starch in Coriander (Dhania) Powder</h3>
+                            <p class="text-xs text-gray-500 line-clamp-3">Common commercial mills use starch from wild potatoes to inflate coriander volume. Learn the simple scientific iodine drops inspection protocol...</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBlogModal('blog-3')" class="text-spiceRed font-extrabold text-xs hover:text-red-800 transition-colors uppercase tracking-wider flex items-center gap-1">Read Full Guide ➔</button>
+                    </div>
+                </div>
+
+                <!-- Blog 4 -->
+                <div class="blog-card bg-creamBG rounded-3xl border border-amber-50 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" data-category="packaging" data-keywords="aroma locks smart packaging safety shelf life moisture oxidation barrier">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-sky-200 to-indigo-800/40 flex items-center justify-center text-6xl select-none">🎒</div>
+                        <div class="p-6 space-y-3">
+                            <span class="text-[10px] bg-sky-100 text-indigo-900 font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Packaging & Safety</span>
+                            <h3 class="text-xl font-serif font-bold text-gray-900">Why Multi-layer Aroma Seals Prevent Flavor Decay</h3>
+                            <p class="text-xs text-gray-500 line-clamp-3">Discover the molecular physics of aroma degradation caused by oxidation and why oxygen-barrier foils are essential to keep whole spices fresh...</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBlogModal('blog-4')" class="text-spiceRed font-extrabold text-xs hover:text-red-800 transition-colors uppercase tracking-wider flex items-center gap-1">Read Full Guide ➔</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State for Searches -->
+            <div id="blog-empty-state" class="hidden text-center py-16 space-y-4">
+                <span class="text-6xl block">📖</span>
+                <h3 class="text-xl font-bold text-gray-800">No Articles Match Your Search Criteria</h3>
+                <p class="text-xs text-gray-400">Try modifying your query or resetting category filter buttons above.</p>
+                <button onclick="resetBlogFilters()" class="bg-spiceRed text-white text-xs font-bold px-6 py-2.5 rounded-xl uppercase">Show All Guides</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM DETAILED MODAL READER (FOR FULL BLOG READING) -->
+    <div id="blog-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-gray-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl overflow-hidden max-w-2xl w-full shadow-2xl relative border-t-8 border-spiceRed animate-scale-up text-xs md:text-sm">
+            <button onclick="closeBlogModal()" class="absolute top-4 right-4 bg-gray-100 text-gray-500 w-8 h-8 rounded-full font-bold flex items-center justify-center hover:bg-gray-200 focus:outline-none">✕</button>
+            <div class="p-8 space-y-4 max-h-[85vh] overflow-y-auto">
+                <div class="flex items-center space-x-2 text-[10px]">
+                    <span id="modal-category" class="bg-red-50 text-spiceRed font-bold px-2 py-0.5 rounded uppercase">Category</span>
+                    <span class="text-gray-400">• Patel Sahab Spices Lab Team</span>
+                </div>
+                <h2 id="modal-title" class="text-2xl font-serif font-bold text-gray-950">Article Title</h2>
+                <div id="modal-content" class="text-gray-600 space-y-4 leading-relaxed text-xs md:text-sm">
+                    <!-- Loaded via javascript -->
+                </div>
+                <div class="border-t border-amber-50 pt-4 flex justify-between items-center text-xs">
+                    <span class="text-gray-400">Locking Flavor & Trust Since Legacy</span>
+                    <button onclick="shareArticleWhatsApp()" class="bg-[#25D366] text-white px-4 py-2 rounded-xl font-bold hover:bg-green-600 transition-all flex items-center gap-1.5 focus:outline-none">
+                        <span>Share on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREMIUM PROFESSIONAL FOOTER -->
+    <footer class="bg-gray-950 text-gray-400 text-xs pt-16 pb-8 border-t-4 border-spiceRed">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-spiceRed text-white p-2.5 rounded-full font-bold">🌶️</div>
+                    <span class="text-lg font-extrabold text-white font-serif tracking-tight">PATEL SAHAB SPICES</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">
+                    100% Pure, authentic ground spice powders and herbal formulations processed scientifically without added dyes, dynamic chemical enhancements, or metallic residues.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="https://www.instagram.com/patelsahabspices/" target="_blank" class="p-2 bg-gray-900 hover:bg-spiceRed text-white rounded-lg transition-colors">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Navigation</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="index.html" class="hover:text-spiceGold transition-colors">Home Page</a></li>
+                    <li><a href="about.html" class="hover:text-spiceGold transition-colors">About Patel Sahab</a></li>
+                    <li><a href="products.html" class="hover:text-spiceGold transition-colors">Premium Spices Range</a></li>
+                    <li><a href="quality.html" class="hover:text-spiceGold transition-colors">Quality Assurance</a></li>
+                    <li><a href="blog.html" class="hover:text-spiceGold transition-colors">SEO Guides & Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Enterprise</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="wholesale.html" class="hover:text-spiceGold transition-colors">B2B Wholesale Portal</a></li>
+                    <li><a href="infrastructure.html" class="hover:text-spiceGold transition-colors">Processing machinery</a></li>
+                    <li><a href="faqs.html" class="hover:text-spiceGold transition-colors">Frequently Queries (FAQs)</a></li>
+                    <li><a href="contact.html" class="hover:text-spiceGold transition-colors">Global Contact Offices</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Business Presence</h4>
+                <p class="leading-relaxed">Patel Sahab Spices (Patel Masala)</p>
+                <div class="space-y-1 text-gray-500">
+                    <p>📍 [Your City, Your State]</p>
+                    <p>✉ info@patelsahabspices.com</p>
+                    <p>📞 Phone: +91 99999 99999</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 gap-4">
+            <p>© 2026 Patel Sahab Spices (Patel Masala). All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="admin.html" class="hover:text-white transition-colors">Live Admin System</a>
+                <span>•</span>
+                <span class="hover:text-white transition-colors cursor-pointer">Terms & Logistics</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT BLOG LOGIC -->
+    <script>
+        // Database of Blog Articles
+        const blogDatabase = {
+            'blog-1': {
+                title: 'The Golden Chemistry of Pure Curcumin in Turmeric',
+                category: 'Wellness & Science',
+                html: `
+                    <p class="font-bold text-gray-900">What is Curcumin and why does its percentage matter?</p>
+                    <p>Curcumin is the main active biological element inside dry turmeric fingers, responsible for turmeric's signature yellow glow, natural antibiotic metrics, and cellular anti-inflammatory properties.</p>
+                    <p>Commercial producers often extract raw curcumin solvent oils to sell separately to medical laboratories before grinding the leftover fiber, rendering the kitchen powder clinically useless. At Patel Sahab Spices, we contract crops with verified minimum 3.5% Curcumin levels, processing them without extraction.</p>
+                    <p class="font-bold text-gray-900">How Cold Grinding preserves the volatile curcumin cells:</p>
+                    <p>Standard warm milling reaches up to 60°C inside dry iron mills, evaporating precious herbal elements. Our low-temperature, slow cryogenic pulverizer system keeps grinding temperatures below 30°C, safeguarding 100% of organic Curcumin values naturally.</p>
+                `
+            },
+            'blog-2': {
+                title: 'How to Identify Adulterants in Red Chilli Powder',
+                category: 'Purity Tests',
+                html: `
+                    <p class="font-bold text-gray-900">The Rise of Dangerous Spice Dyes:</p>
+                    <p>Commercial red chilli powders are occasionally mixed with sawdust, sand, brick powder, or toxic synthetic dye chemicals like Sudan Red to give cheap, low-grade harvests an appealing bright crimson coloring. This constitutes a severe liver health hazard.</p>
+                    <p class="font-bold text-gray-900">The Simple 2-Minute Water Sedimentation Test:</p>
+                    <p>Follow these instructions closely in your kitchen:</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        <li>Take a transparent glass cup and fill it with fresh room-temperature water.</li>
+                        <li>Sprinkle a level teaspoon of dry red chilli powder gently over the top surface.</li>
+                        <li>Observe the particles for 2 minutes without stirring.</li>
+                        <li><strong>Results:</strong> Pure, natural ground chilli powder will float or sink very slowly, leaving the water clear. Brick powder, sand, or heavy soils will sink instantly, forming a gritty bottom layer. Synthetic dyes will leave red color trails bleeding rapidly into the water as they float downward.</li>
+                    </ul>
+                `
+            },
+            'blog-3': {
+                title: 'Detecting Added Starch in Coriander (Dhania) Powder',
+                category: 'Purity Tests',
+                html: `
+                    <p class="font-bold text-gray-900">Why are starch fillers added to coriander?</p>
+                    <p>Coriander (Dhania) seeds are dry and fibrous. Untrustworthy brands grind them along with wild potato starches, cheap flour, or rice husks to inflate volume parameters. This decreases the citrus herbal aroma and makes the powder clump during storage.</p>
+                    <p class="font-bold text-gray-900">The Chemical Iodine Drops Inspection Protocol:</p>
+                    <p>Conduct this easy test to verify your product purity:</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        <li>Boil 2 tablespoons of coriander powder in a small cup of water for 1 minute to release starch carbohydrates.</li>
+                        <li>Let the liquid cool down completely.</li>
+                        <li>Add 2 to 3 drops of standard pharmaceutical Iodine solution (easily available as tincture at local pharmacies).</li>
+                        <li><strong>Verification:</strong> If the mixture changes color to a deep blue-black shade, it is positive for added foreign potato or wheat starch fillers. Pure coriander powder will remain brown/amber without turning blue.</li>
+                    </ul>
+                `
+            },
+            'blog-4': {
+                title: 'Why Multi-layer Aroma Seals Prevent Flavor Decay',
+                category: 'Packaging & Safety',
+                html: `
+                    <p class="font-bold text-gray-950">The Chemistry of Flavor Loss:</p>
+                    <p>Ground spices contain volatile essential oils (such as thymol in cumin and linalool in coriander) that are highly sensitive to oxygen and moisture. Standard paper or single-layer plastic bags allow oxygen to seep through, oxidizing these oils and rendering the spices stale in a matter of weeks.</p>
+                    <p class="font-bold text-gray-950">Our Smart Aroma-Lock Solution:</p>
+                    <p>At Patel Sahab Spices, we utilize premium multi-layer vacuum barrier foils that block light, humidity, and oxygen completely. This shields the delicate volatile oils from decay, keeping the ground spices as fresh as the day they were milled, even up to 2 years from packaging.</p>
+                `
+            }
+        };
+
+        let currentActiveArticle = 'blog-1';
+
+        // Filter functionality
+        let currentFilter = 'all';
+
+        function filterCategory(cat) {
+            currentFilter = cat;
+            
+            // Toggle active classes on filter buttons
+            const btns = document.querySelectorAll('.cat-btn');
+            btns.forEach(btn => {
+                btn.classList.remove('bg-spiceRed', 'text-white', 'shadow-md');
+                btn.classList.add('bg-creamBG', 'text-gray-700', 'border', 'border-amber-100');
+            });
+
+            // Find clicked button to set active style
+            const clickedBtn = Array.from(btns).find(btn => btn.getAttribute('onclick').includes(cat));
+            if (clickedBtn) {
+                clickedBtn.classList.remove('bg-creamBG', 'text-gray-700', 'border', 'border-amber-100');
+                clickedBtn.classList.add('bg-spiceRed', 'text-white', 'shadow-md');
+            }
+
+            applyBlogFilter();
+        }
+
+        function applyBlogFilter() {
+            const query = document.getElementById('blog-search').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.blog-card');
+            let matchedCount = 0;
+
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const keywords = card.getAttribute('data-keywords').toLowerCase();
+
+                const matchesCategory = (currentFilter === 'all') || (category === currentFilter);
+                const matchesSearch = keywords.includes(query) || card.innerText.toLowerCase().includes(query);
+
+                if (matchesCategory && matchesSearch) {
+                    card.classList.remove('hidden');
+                    matchedCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Toggle empty state
+            const emptyState = document.getElementById('blog-empty-state');
+            const grid = document.getElementById('blog-grid');
+            if (matchedCount === 0) {
+                emptyState.classList.remove('hidden');
+                grid.classList.add('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                grid.classList.remove('hidden');
+            }
+        }
+
+        function resetBlogFilters() {
+            document.getElementById('blog-search').value = '';
+            filterCategory('all');
+        }
+
+        // Modal triggers
+        function openBlogModal(blogId) {
+            const article = blogDatabase[blogId];
+            if (!article) return;
+
+            currentActiveArticle = blogId;
+
+            document.getElementById('modal-title').textContent = article.title;
+            document.getElementById('modal-category').textContent = article.category;
+            document.getElementById('modal-content').innerHTML = article.html;
+
+            document.getElementById('blog-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Lock background scrolling
+        }
+
+        function closeBlogModal() {
+            document.getElementById('blog-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Unlock background scrolling
+        }
+
+        function shareArticleWhatsApp() {
+            const article = blogDatabase[currentActiveArticle];
+            if (!article) return;
+
+            const text = `Read this informative guide from Patel Sahab Spices: "${article.title}" - Pure, Unadulterated Indian Spices. Visit: info@patelsahabspices.com`;
+            const encoded = encodeURIComponent(text);
+            window.open(`https://wa.me/?text=${encoded}`, '_blank');
+        }
+
+        // Mobile drawer script
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+    </script>
+</body>
+</html>

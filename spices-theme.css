@@ -1,0 +1,314 @@
+/* ==========================================================================
+PATEL SAHAB SPICES - ULTRA-PREMIUM GLOBAL THEME STYLESHEET
+Aesthetics: Luxury Heritage, Metallic Gold, Tactile Textures, & Deep Spices
+========================================================================== */
+
+/* --------------------------------------------------------------------------
+
+CORE VARIABLES & LUXURY COLOR PALETTE
+-------------------------------------------------------------------------- /
+:root {
+/ Rich Heritage Spice Colors /
+--spice-crimson: #8C1111;       / Deep Kashmiri Chilli /
+--spice-crimson-dark: #540303;  / Roasted Dry Pods /
+--spice-gold-base: #E8A317;     / Pure Turmeric Gold /
+--spice-gold-light: #F9D06B;    / Saffron Glow /
+--spice-emerald: #14402F;       / Cardamom Green /
+--spice-emerald-deep: #0B241A;  / Deep Forest Spices /
+--spice-clay: #C85A17;          / Terracotta Earth */
+
+/* Luxury Soft Neutrals */
+--cream-soft: #FFFDF9;          /* Raw Unbleached Cotton */
+--cream-tactile: #FBF6EF;       /* Fine Grain Paper */
+--text-charcoal: #1C1917;       /* Antique Charcoal Ink */
+--text-muted: #57534E;          /* Dusty Spice Silt */
+
+/* Gold Foil Metallic Gradient */
+--gold-foil: linear-gradient(135deg, #B58428 0%, #E8A317 25%, #FBF1A9 50%, #D89E2B 75%, #91681B 100%);
+--gold-foil-soft: linear-gradient(135deg, rgba(181, 132, 40, 0.1) 0%, rgba(232, 163, 23, 0.2) 50%, rgba(145, 104, 27, 0.1) 100%);
+--crimson-royale: linear-gradient(135deg, #8C1111 0%, #540303 100%);
+
+/* Ultimate Premium Shadows (Multi-layered for 3D realism) */
+--shadow-luxury: 0 4px 20px -2px rgba(84, 3, 3, 0.08), 0 12px 40px -4px rgba(84, 3, 3, 0.12);
+--shadow-gold-glow: 0 0 25px rgba(232, 163, 23, 0.35);
+--shadow-aroma: 0 20px 50px -15px rgba(20, 64, 47, 0.15);
+
+/* Fonts */
+--font-serif: 'Playfair Display', serif;
+--font-sans: 'Poppins', sans-serif;
+
+
+}
+
+/* --------------------------------------------------------------------------
+2. GLOBAL BODY & TACTILE TEXTURE OVERLAYS
+-------------------------------------------------------------------------- */
+
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+background-color: var(--cream-soft);
+}
+
+body {
+font-family: var(--font-sans);
+color: var(--text-charcoal);
+background-color: var(--cream-soft);
+line-height: 1.7;
+overflow-x: hidden;
+position: relative;
+}
+
+/* Tactile Vintage Paper Grain Overlay */
+body::before {
+content: '';
+position: fixed;
+inset: 0;
+width: 100%;
+height: 100%;
+opacity: 0.04;
+background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+pointer-events: none;
+z-index: 100;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: var(--cream-tactile);
+}
+::-webkit-scrollbar-thumb {
+background: var(--gold-foil);
+border: 2px solid var(--cream-soft);
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: var(--spice-crimson);
+}
+
+/* Selection highlight */
+::selection {
+background-color: var(--spice-gold-base);
+color: var(--text-charcoal);
+}
+
+/* --------------------------------------------------------------------------
+3. LUXURY TYPOGRAPHY & REFLECTIVE GOLD EFFECT
+-------------------------------------------------------------------------- */
+h1, h2, h3, h4, .font-serif {
+font-family: var(--font-serif);
+font-weight: 800;
+letter-spacing: -0.01em;
+}
+
+/* Realistic Gold Foil Text Effect /
+.gold-foil-text {
+background: var(--gold-foil);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: var(--spice-gold-base); / Fallback */
+filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+/* Royal Drop Cap (लग्जरी बुक स्टाइल पहला अक्षर) */
+.spice-drop-cap::first-letter {
+font-family: var(--font-serif);
+float: left;
+font-size: 3.5rem;
+line-height: 0.8;
+padding-top: 4px;
+padding-right: 8px;
+font-weight: 900;
+color: var(--spice-crimson);
+}
+
+/* --------------------------------------------------------------------------
+4. ROYAL ORNAMENTAL BORDERS & SEPARATORS
+-------------------------------------------------------------------------- /
+/ Royal Traditional Double Gold Frame */
+.royal-gold-frame {
+border: 4px double var(--spice-gold-base);
+padding: 12px;
+position: relative;
+background: var(--cream-soft);
+}
+
+/* Corner Mandala Ornaments using SVG symbols */
+.royal-gold-frame::before, .royal-gold-frame::after {
+content: '✦';
+position: absolute;
+color: var(--spice-gold-base);
+font-size: 16px;
+background: var(--cream-soft);
+padding: 0 6px;
+line-height: 1;
+}
+.royal-gold-frame::before {
+top: -10px;
+left: 10px;
+}
+.royal-gold-frame::after {
+bottom: -10px;
+right: 10px;
+}
+
+/* Intricate Divider with Diamond Motif */
+.royal-divider {
+display: flex;
+align-items: center;
+text-align: center;
+margin: 2rem auto;
+width: 80%;
+max-width: 300px;
+}
+.royal-divider::before, .royal-divider::after {
+content: '';
+flex: 1;
+border-bottom: 1px solid rgba(232, 163, 23, 0.4);
+}
+.royal-divider:not(:empty)::before {
+margin-right: .5em;
+}
+.royal-divider:not(:empty)::after {
+margin-left: .5em;
+}
+.royal-divider span {
+color: var(--spice-gold-base);
+font-size: 14px;
+}
+
+/* --------------------------------------------------------------------------
+5. HIGH-END MICRO-INTERACTIONS & 3D CARDS
+-------------------------------------------------------------------------- /
+/ Ultra Luxury Card with Multi-layered Shadows & 3D Tilt Effect on hover */
+.spice-card-luxury {
+background: #FFFFFF;
+border: 1px solid rgba(181, 132, 40, 0.12);
+border-radius: 20px;
+transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+box-shadow: var(--shadow-luxury);
+position: relative;
+overflow: hidden;
+}
+
+.spice-card-luxury::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: var(--gold-foil);
+opacity: 0;
+transition: opacity 0.4s ease;
+}
+
+.spice-card-luxury:hover {
+transform: translateY(-10px) scale(1.01);
+box-shadow: 0 30px 60px -15px rgba(84, 3, 3, 0.15), var(--shadow-gold-glow);
+border-color: var(--spice-gold-base);
+}
+
+.spice-card-luxury:hover::before {
+opacity: 1;
+}
+
+/* Card Image container with elegant zoom & warm color tint */
+.luxury-image-wrap {
+position: relative;
+overflow: hidden;
+}
+.luxury-image-wrap::after {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(to bottom, transparent 60%, rgba(84, 3, 3, 0.3));
+opacity: 0.7;
+transition: opacity 0.4s ease;
+}
+.spice-card-luxury:hover .luxury-image-wrap::after {
+opacity: 0.9;
+}
+
+/* --------------------------------------------------------------------------
+6. BULK RFQ BASKET & MODERN FORM UI
+-------------------------------------------------------------------------- /
+/ Luxury inputs with golden focal cues */
+input, select, textarea {
+background-color: #FFFFFF !important;
+border: 1.5px solid rgba(181, 132, 40, 0.2) !important;
+border-radius: 12px !important;
+transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+border-color: var(--spice-gold-base) !important;
+outline: none !important;
+box-shadow: 0 0 0 4px rgba(232, 163, 23, 0.15) !important;
+background-color: #FFFFFF !important;
+}
+
+/* --------------------------------------------------------------------------
+7. KEYFRAME ANIMATIONS & DECORATIVE GLOWS
+-------------------------------------------------------------------------- /
+/ Breathing Aroma Glow (खुशबू जैसी ब्रीथिंग रोशनी) */
+@keyframes aromaBreath {
+0%, 100% {
+box-shadow: 0 0 15px rgba(232, 163, 23, 0.1);
+border-color: rgba(232, 163, 23, 0.2);
+}
+50% {
+box-shadow: 0 0 30px rgba(232, 163, 23, 0.35);
+border-color: var(--spice-gold-base);
+}
+}
+.spice-aroma-glow {
+animation: aromaBreath 4s infinite ease-in-out;
+}
+
+/* Slow Traditional Mandala Rotation */
+@keyframes slowMandala {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+.traditional-mandala-rotate {
+animation: slowMandala 25s infinite linear;
+}
+
+/* Premium Buttons Styling */
+.btn-gold-royale {
+background: var(--gold-foil);
+color: var(--text-charcoal);
+font-weight: 700;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+box-shadow: var(--shadow-gold-glow);
+}
+.btn-gold-royale:hover {
+transform: translateY(-2px);
+box-shadow: 0 15px 30px -5px rgba(232, 163, 23, 0.5);
+filter: brightness(1.1);
+}
+
+.btn-crimson-royale {
+background: var(--crimson-royale);
+color: #FFFFFF;
+font-weight: 700;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+box-shadow: 0 10px 25px -5px rgba(140, 17, 17, 0.3);
+}
+.btn-crimson-royale:hover {
+transform: translateY(-2px);
+box-shadow: 0 15px 30px -5px rgba(140, 17, 17, 0.5);
+filter: brightness(1.1);
+}

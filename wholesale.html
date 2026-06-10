@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="spices-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Sourcing & Export | Patel Sahab Spices - Premium Pure Flavors</title>
+    
+    <!-- Tailwind CSS for high-end modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spiceRed: '#A61B1B',
+                        spiceGold: '#E8A317',
+                        spiceGreen: '#1D5C42',
+                        creamBG: '#FFFDF9'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #A61B1B 0%, #7A1212 50%, #1D5C42 100%);
+        }
+    </style>
+</head>
+<body class="bg-creamBG text-gray-800 font-sans selection:bg-spiceGold selection:text-white">
+
+    <!-- TOP HEADER BAR (Quick Contact & Updates) -->
+    <div class="bg-spiceRed text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    +91 99999 99999
+                </span>
+                <span class="hidden md:flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 00-2 2z"></path></svg>
+                    info@patelsahabspices.com
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-spiceGold text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider uppercase">100% Pure & Natural</span>
+                <a href="admin.html" class="hover:text-spiceGold transition-colors text-[11px] font-semibold underline">Admin Panel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION HEADER -->
+    <header class="bg-white border-b border-amber-50 sticky top-0 z-40 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="bg-spiceRed text-white p-2.5 rounded-full shadow-md flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3l9 9-9 9M12 3L3 12l9 9"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-2xl font-extrabold tracking-tight text-spiceRed font-serif leading-none">PATEL SAHAB</span>
+                    <span class="text-[10px] tracking-[0.25em] font-bold text-gray-400 uppercase">Premium Spices & Herbs</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden lg:flex items-center space-x-1 font-semibold text-gray-700 text-sm">
+                <a href="index.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Home</a>
+                <a href="about.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">About Us</a>
+                <a href="products.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Our Spices</a>
+                <a href="quality.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Quality Standards</a>
+                <a href="infrastructure.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Infrastructure</a>
+                <a href="blog.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Spice Blog</a>
+                <a href="faqs.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">FAQs</a>
+                <a href="contact.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="wholesale.html" class="bg-spiceRed text-white text-xs font-bold px-5 py-3 rounded-xl shadow-md">
+                    Wholesale / B2B RFQ
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="menu-toggle" class="lg:hidden p-2 rounded-md hover:bg-gray-100 text-gray-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-amber-50 px-4 py-4 space-y-2 shadow-inner">
+            <a href="index.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Home</a>
+            <a href="about.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">About Us</a>
+            <a href="products.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Our Spices</a>
+            <a href="quality.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Quality Standards</a>
+            <a href="infrastructure.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Infrastructure</a>
+            <a href="blog.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Spice Blog</a>
+            <a href="faqs.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">FAQs</a>
+            <a href="contact.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Contact Us</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col space-y-2">
+                <a href="wholesale.html" class="w-full bg-spiceRed text-white text-center py-3 rounded-xl text-sm font-bold shadow-md">B2B Sourcing Inquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO COVER STRIP -->
+    <section class="relative overflow-hidden luxury-gradient text-white py-16 lg:py-24 px-4">
+        <div class="absolute inset-0 bg-opacity-10 bg-[radial-gradient(#E8A317_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
+            <span class="text-spiceGold text-xs font-bold tracking-[0.25em] uppercase block">Global Sourcing Solutions</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight">
+                B2B Bulk Sourcing & RFQ
+            </h1>
+            <p class="text-sm md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                Connect directly with our corporate team for bulk purchases, regional distributorships, customized packaging, or container-load exports.
+            </p>
+        </div>
+    </section>
+
+    <!-- B2B ADVANTAGES & FORM SECTION -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12">
+            
+            <!-- Left Side: Sourcing Advantages & Active Basket -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-spiceRed text-xs font-bold tracking-[0.2em] uppercase block">Why Partner With Us?</span>
+                    <h2 class="text-3xl font-serif font-bold text-gray-900">Premium B2B Sourcing</h2>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        We understand the requirements of food manufacturing plants, supermarket distribution channels, and export partners. We guarantee absolute standard compliance, bulk continuity, and logistical support.
+                    </p>
+                </div>
+
+                <!-- Advantage Points -->
+                <div class="space-y-4 text-xs">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-2xl">📦</span>
+                        <div>
+                            <h4 class="font-bold text-gray-950">Custom & Private Labeling (OEM)</h4>
+                            <p class="text-gray-500 mt-0.5">We print, package and fulfill spices under your specific brands in diverse paper, plastic, or jute sizes.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-2xl">⚙️</span>
+                        <div>
+                            <h4 class="font-bold text-gray-950">Flexible Chemical Parameters</h4>
+                            <p class="text-gray-500 mt-0.5">Customized grinding setups to produce tailored Curcumin % or ASTA heat units as per your compliance requirements.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-2xl">🌍</span>
+                        <div>
+                            <h4 class="font-bold text-gray-950">Steady Global Supply Chain</h4>
+                            <p class="text-gray-500 mt-0.5">Robust direct sourcing ensuring predictable cargo dispatches even during seasonal crop fluctuations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INTEGRATED RFQ BASKET TRACKER -->
+                <div class="bg-creamBG border border-amber-100 p-6 rounded-3xl space-y-4" id="rfq-basket-card">
+                    <h3 class="font-serif font-bold text-gray-950 flex items-center gap-2">
+                        <span>📋</span> Selected RFQ Spices Basket
+                    </h3>
+                    <p class="text-xs text-gray-400">Products chosen from the Spices Catalog for wholesale quotation:</p>
+                    
+                    <div class="space-y-2" id="basket-items-list">
+                        <!-- Loaded dynamically via LocalStorage -->
+                        <p class="text-xs text-gray-400 italic">No spices selected. Go to <a href="products.html" class="text-spiceRed font-bold underline">Our Spices</a> to add some!</p>
+                    </div>
+
+                    <div class="pt-2 flex justify-between items-center text-xs">
+                        <button onclick="clearBasket()" class="text-gray-400 hover:text-gray-600 font-bold hidden" id="clear-basket-btn">Clear All</button>
+                        <span class="text-gray-500 font-medium" id="basket-counter-text">Total: 0 Selected</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Advanced Multi-field RFQ Lead Form -->
+            <div class="lg:col-span-7">
+                <div class="bg-creamBG border border-amber-50 rounded-3xl p-8 md:p-10 shadow-lg space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold font-serif text-gray-950">Request for Quote (RFQ) Form</h3>
+                        <p class="text-xs text-gray-400 mt-1">Submit your volume, destination, and package expectations below.</p>
+                    </div>
+
+                    <form id="b2b-rfq-form" class="space-y-4 text-xs font-semibold text-gray-600">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Company Name *</label>
+                                <input type="text" id="company-name" required placeholder="e.g., Global Spice Importers Ltd." class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800" />
+                            </div>
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Contact Person Name *</label>
+                                <input type="text" id="contact-name" required placeholder="Full Name" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800" />
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Country of Import *</label>
+                                <input type="text" id="country" required placeholder="e.g., United States, Germany, UAE" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800" />
+                            </div>
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">State / Province</label>
+                                <input type="text" id="state" placeholder="e.g., Texas, Bavaria" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800" />
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Direct Phone (WhatsApp Preferred) *</label>
+                                <input type="tel" id="phone" required placeholder="including Country Code" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800" />
+                            </div>
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Business Email *</label>
+                                <input type="email" id="email" required placeholder="name@company.com" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800" />
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Target Volume Requirement</label>
+                                <select id="volume" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800">
+                                    <option value="Less than 1 Metric Ton">Sample / Trial Batch (&lt; 1 MT)</option>
+                                    <option value="1 - 5 Metric Tons">1 - 5 Metric Tons</option>
+                                    <option value="5 - 20 Metric Tons">5 - 20 Metric Tons</option>
+                                    <option value="Full Container Load (FCL)">Full Container Load (FCL)</option>
+                                    <option value="Regular Monthly Off-take Contract">Regular Monthly Contract</option>
+                                </select>
+                            </div>
+                            <div class="space-y-1">
+                                <label class="block uppercase tracking-wider text-gray-500">Preferred Packaging Style</label>
+                                <select id="packaging" class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800">
+                                    <option value="Bulk 25kg PP / HDPE Bags">Bulk 25kg PP / HDPE Bags</option>
+                                    <option value="Multi-wall Paper Bags">Multi-layer Paper Bags</option>
+                                    <option value="Custom Private Label Pouches (50g-1kg)">Custom Private Label Pouches (50g-1kg)</option>
+                                    <option value="Glass / Plastic Jars (Retail Ready)">Glass / Plastic Jars (Retail Ready)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="block uppercase tracking-wider text-gray-500">Detailed Message & Chemical Specs Needed *</label>
+                            <textarea id="requirement" required rows="4" placeholder="Describe any exact laboratory specs like Curcumin level (%), moisture constraints, packing configurations, or target shipping timelines..." class="w-full bg-white border border-amber-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-spiceGold font-medium text-gray-800"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-spiceRed hover:bg-red-800 text-white font-extrabold text-sm py-4 rounded-xl shadow-md transition-all uppercase tracking-wider">
+                            Submit Sourcing Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM PROFESSIONAL FOOTER -->
+    <footer class="bg-gray-950 text-gray-400 text-xs pt-16 pb-8 border-t-4 border-spiceRed">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-spiceRed text-white p-2.5 rounded-full font-bold">🌶️</div>
+                    <span class="text-lg font-extrabold text-white font-serif tracking-tight">PATEL SAHAB SPICES</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">
+                    100% Pure, authentic ground spice powders and herbal formulations processed scientifically without added dyes, dynamic chemical enhancements, or metallic residues.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="https://www.instagram.com/patelsahabspices/" target="_blank" class="p-2 bg-gray-900 hover:bg-spiceRed text-white rounded-lg transition-colors">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Navigation</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="index.html" class="hover:text-spiceGold transition-colors">Home Page</a></li>
+                    <li><a href="about.html" class="hover:text-spiceGold transition-colors">About Patel Sahab</a></li>
+                    <li><a href="products.html" class="hover:text-spiceGold transition-colors">Premium Spices Range</a></li>
+                    <li><a href="quality.html" class="hover:text-spiceGold transition-colors">Quality Assurance</a></li>
+                    <li><a href="blog.html" class="hover:text-spiceGold transition-colors">SEO Guides & Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Enterprise</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="wholesale.html" class="hover:text-spiceGold transition-colors">B2B Wholesale Portal</a></li>
+                    <li><a href="infrastructure.html" class="hover:text-spiceGold transition-colors">Processing machinery</a></li>
+                    <li><a href="faqs.html" class="hover:text-spiceGold transition-colors">Frequently Queries (FAQs)</a></li>
+                    <li><a href="contact.html" class="hover:text-spiceGold transition-colors">Global Contact Offices</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Business Presence</h4>
+                <p class="leading-relaxed">Patel Sahab Spices (Patel Masala)</p>
+                <div class="space-y-1 text-gray-500">
+                    <p>📍 [Your City, Your State]</p>
+                    <p>✉ info@patelsahabspices.com</p>
+                    <p>📞 Phone: +91 99999 99999</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 gap-4">
+            <p>© 2026 Patel Sahab Spices (Patel Masala). All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="admin.html" class="hover:text-white transition-colors">Live Admin System</a>
+                <span>•</span>
+                <span class="hover:text-white transition-colors cursor-pointer">Terms & Logistics</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT LOGIC FOR REAL-TIME SIMULATION -->
+    <script>
+        // Mobile menu drawer toggle script
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        // RFQ Basket Loader Functionality
+        let rfqBasket = JSON.parse(localStorage.getItem('patel_sahab_rfq_basket')) || [];
+
+        function renderBasket() {
+            const listContainer = document.getElementById('basket-items-list');
+            const clearBtn = document.getElementById('clear-basket-btn');
+            const counterText = document.getElementById('basket-counter-text');
+
+            if (rfqBasket.length === 0) {
+                listContainer.innerHTML = `<p class="text-xs text-gray-400 italic">No spices selected. Go to <a href="products.html" class="text-spiceRed font-bold underline">Our Spices</a> catalog to choose products!</p>`;
+                clearBtn.classList.add('hidden');
+                counterText.textContent = 'Total: 0 Selected';
+            } else {
+                listContainer.innerHTML = '';
+                rfqBasket.forEach((spice, index) => {
+                    const row = document.createElement('div');
+                    row.className = "flex justify-between items-center bg-white p-2.5 rounded-lg border border-amber-50 text-[11px] font-bold";
+                    row.innerHTML = `
+                        <span class="text-gray-900">${spice}</span>
+                        <button onclick="removeSpiceFromBasket(${index})" class="text-red-500 hover:text-red-700 focus:outline-none">✕</button>
+                    `;
+                    listContainer.appendChild(row);
+                });
+                clearBtn.classList.remove('hidden');
+                counterText.textContent = `Total: ${rfqBasket.length} Selected`;
+            }
+        }
+
+        function removeSpiceFromBasket(index) {
+            rfqBasket.splice(index, 1);
+            localStorage.setItem('patel_sahab_rfq_basket', JSON.stringify(rfqBasket));
+            renderBasket();
+            showToast('Item removed from basket.');
+        }
+
+        function clearBasket() {
+            rfqBasket = [];
+            localStorage.setItem('patel_sahab_rfq_basket', JSON.stringify([]));
+            renderBasket();
+            showToast('RFQ Basket cleared.');
+        }
+
+        // Custom Toast Alert System
+        function showToast(message) {
+            const toastDiv = document.createElement('div');
+            toastDiv.className = "fixed bottom-6 left-6 bg-spiceGreen text-white px-6 py-3.5 rounded-2xl shadow-2xl z-50 text-xs font-bold flex items-center space-x-2";
+            toastDiv.innerHTML = `<span>✔</span> <span>${message}</span>`;
+            document.body.appendChild(toastDiv);
+            setTimeout(() => {
+                toastDiv.remove();
+            }, 3500);
+        }
+
+        // Form Submit Handler
+        const rfqForm = document.getElementById('b2b-rfq-form');
+        rfqForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const company = document.getElementById('company-name').value;
+            const person = document.getElementById('contact-name').value;
+            const country = document.getElementById('country').value;
+            const state = document.getElementById('state').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const volume = document.getElementById('volume').value;
+            const packaging = document.getElementById('packaging').value;
+            const message = document.getElementById('requirement').value;
+
+            // Load existing inquiries from LocalStorage
+            let inquiries = JSON.parse(localStorage.getItem('patel_sahab_inquiries')) || [];
+
+            // Compile selected spices
+            const itemsString = rfqBasket.length > 0 ? rfqBasket.join(', ') : 'Assorted Spices';
+
+            // Push new inquiry
+            const newRFQ = {
+                id: 'rfq-' + Date.now(),
+                date: new Date().toISOString().split('T')[0],
+                name: person,
+                company: company,
+                phone: phone,
+                email: email,
+                items: itemsString,
+                message: `Volume: ${volume}. Pack Style: ${packaging}. Details: ${message}. Destination: ${state ? state + ', ' : ''}${country}`
+            };
+
+            inquiries.unshift(newRFQ);
+            localStorage.setItem('patel_sahab_inquiries', JSON.stringify(inquiries));
+
+            // Reset Form and Clear Basket
+            rfqForm.reset();
+            clearBasket();
+
+            // Display Success State
+            const container = rfqForm.parentElement;
+            container.innerHTML = `
+                <div class="text-center py-12 space-y-6">
+                    <span class="text-6xl block animate-bounce">📨</span>
+                    <h3 class="text-3xl font-serif font-extrabold text-gray-950">Quotation Submitted!</h3>
+                    <p class="text-xs text-gray-500 max-w-md mx-auto leading-relaxed">
+                        Thank you for your request. Our B2B Sales Head will review your chemical specifications and contact you on <span class="font-extrabold text-spiceRed">${email}</span> / <span class="font-extrabold text-spiceRed">${phone}</span> within 12-24 hours.
+                    </p>
+                    <div class="pt-4 flex justify-center gap-2">
+                        <button onclick="window.location.reload()" class="bg-spiceGold text-gray-950 font-bold text-xs px-6 py-3 rounded-xl">Submit Another Inquiry</button>
+                        <a href="admin.html" class="bg-gray-900 text-white font-bold text-xs px-6 py-3 rounded-xl flex items-center justify-center">View in Admin Panel</a>
+                    </div>
+                </div>
+            `;
+        });
+
+        // Initialize view
+        window.onload = function() {
+            renderBasket();
+        }
+    </script>
+</body>
+</html>

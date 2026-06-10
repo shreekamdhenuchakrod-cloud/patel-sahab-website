@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="spices-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Infrastructure & Gallery | Patel Sahab Spices - Premium Pure Flavors</title>
+    
+    <!-- Tailwind CSS for high-end modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spiceRed: '#A61B1B',
+                        spiceGold: '#E8A317',
+                        spiceGreen: '#1D5C42',
+                        creamBG: '#FFFDF9'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #A61B1B 0%, #7A1212 50%, #1D5C42 100%);
+        }
+    </style>
+</head>
+<body class="bg-creamBG text-gray-800 font-sans selection:bg-spiceGold selection:text-white">
+
+    <!-- TOP HEADER BAR (Quick Contact & Updates) -->
+    <div class="bg-spiceRed text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    +91 99999 99999
+                </span>
+                <span class="hidden md:flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 00-2 2z"></path></svg>
+                    info@patelsahabspices.com
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-spiceGold text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider uppercase">100% Pure & Natural</span>
+                <a href="admin.html" class="hover:text-spiceGold transition-colors text-[11px] font-semibold underline">Admin Panel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION HEADER -->
+    <header class="bg-white border-b border-amber-50 sticky top-0 z-40 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Brand Logo: Patel Sahab Spices -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="bg-spiceRed text-white p-2.5 rounded-full shadow-md flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3l9 9-9 9M12 3L3 12l9 9"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-2xl font-extrabold tracking-tight text-spiceRed font-serif leading-none">PATEL SAHAB</span>
+                    <span class="text-[10px] tracking-[0.25em] font-bold text-gray-400 uppercase">Premium Spices & Herbs</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden lg:flex items-center space-x-1 font-semibold text-gray-700 text-sm">
+                <a href="index.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Home</a>
+                <a href="about.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">About Us</a>
+                <a href="products.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Our Spices</a>
+                <a href="quality.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Quality Standards</a>
+                <a href="infrastructure.html" class="px-3 py-2 text-spiceRed bg-amber-50/50 rounded-lg">Infrastructure</a>
+                <a href="blog.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Spice Blog</a>
+                <a href="faqs.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">FAQs</a>
+                <a href="contact.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="wholesale.html" class="bg-spiceRed hover:bg-red-800 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
+                    Wholesale / B2B RFQ
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="menu-toggle" class="lg:hidden p-2 rounded-md hover:bg-gray-100 text-gray-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-amber-50 px-4 py-4 space-y-2 shadow-inner">
+            <a href="index.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Home</a>
+            <a href="about.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">About Us</a>
+            <a href="products.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Our Spices</a>
+            <a href="quality.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Quality Standards</a>
+            <a href="infrastructure.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-bold text-spiceRed bg-amber-50">Infrastructure</a>
+            <a href="blog.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Spice Blog</a>
+            <a href="faqs.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">FAQs</a>
+            <a href="contact.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Contact Us</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col space-y-2">
+                <a href="wholesale.html" class="w-full bg-spiceRed text-white text-center py-3 rounded-xl text-sm font-bold shadow-md">B2B Sourcing Inquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO COVER STRIP -->
+    <section class="relative overflow-hidden luxury-gradient text-white py-16 lg:py-24 px-4">
+        <div class="absolute inset-0 bg-opacity-10 bg-[radial-gradient(#E8A317_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
+            <span class="text-spiceGold text-xs font-bold tracking-[0.25em] uppercase block">Advanced Sanitary Processing</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight">
+                Infrastructure & Technology
+            </h1>
+            <p class="text-sm md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                Take a closer look at the ultra-hygienic mechanical equipment, automatic clean-room packing zones, and quality checkpoints that power our daily milling operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY & MACHINERY STATIONS -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-2">
+                <span class="text-spiceRed text-xs font-bold uppercase tracking-widest block">Mechanized Excellence</span>
+                <h2 class="text-3xl font-serif font-bold text-gray-900">Our High-End Sourcing & Processing Machinery</h2>
+                <div class="w-16 h-1 bg-spiceGold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Unit 1 -->
+                <div class="bg-creamBG p-8 rounded-3xl border border-amber-50 space-y-4 shadow-sm group hover:shadow-md transition-shadow">
+                    <div class="text-4xl bg-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-inner">👁️</div>
+                    <h3 class="text-xl font-bold font-serif text-gray-950">1. Sortex Seed Cleaners</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        To guarantee zero physical debris, dust, or organic farm weeds, raw whole cumin, coriander and mustard seeds undergo rigorous multi-step Sortex optical clearing. Damaged or discolored particles are eliminated automatically.
+                    </p>
+                </div>
+                <!-- Unit 2 -->
+                <div class="bg-creamBG p-8 rounded-3xl border border-amber-50 space-y-4 shadow-sm group hover:shadow-md transition-shadow">
+                    <div class="text-4xl bg-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-inner">❄️</div>
+                    <h3 class="text-xl font-bold font-serif text-gray-950">2. Cryogenic Low-Temp Milling</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Instead of traditional warm iron grinding, we employ custom low-speed cool pulverizing chambers. Mill friction levels stay strictly below 30°C to secure volatile flavor oils, color saturation, and inherent medicinal metrics.
+                    </p>
+                </div>
+                <!-- Unit 3 -->
+                <div class="bg-creamBG p-8 rounded-3xl border border-amber-50 space-y-4 shadow-sm group hover:shadow-md transition-shadow">
+                    <div class="text-4xl bg-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-inner">🧼</div>
+                    <h3 class="text-xl font-bold font-serif text-gray-950">3. Sanitized Pack Enclosures</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Our ground spice powders are directly funneled into automatic FFS (Form Fill Seal) packaging setups inside negative-pressure cleanroom areas. Human contact is completely minimized to block microbial contamination risks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE PHOTO & VIDEO GALLERY (INTERACTIVE FILTERS) -->
+    <section class="py-16 bg-creamBG border-t border-b border-amber-50 px-4">
+        <div class="max-w-7xl mx-auto space-y-12">
+            
+            <!-- Section Header -->
+            <div class="text-center space-y-2">
+                <span class="text-spiceRed text-xs font-bold uppercase tracking-widest block">Visual Proof of Purity</span>
+                <h2 class="text-3xl font-serif font-bold text-gray-900">Virtual Factory Tour & Gallery</h2>
+                <div class="w-16 h-1 bg-spiceGold mx-auto rounded-full"></div>
+                <p class="text-xs text-gray-400">Click categories below to filter and view actual raw processing stages.</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2" id="gallery-filters">
+                <button onclick="filterGallery('all')" class="gallery-filter-btn active bg-spiceRed text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider shadow-sm transition-all">All Photos</button>
+                <button onclick="filterGallery('machinery')" class="gallery-filter-btn bg-white hover:bg-amber-50/50 text-gray-700 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-amber-100 transition-all">Machinery</button>
+                <button onclick="filterGallery('products')" class="gallery-filter-btn bg-white hover:bg-amber-50/50 text-gray-700 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-amber-100 transition-all">Products</button>
+                <button onclick="filterGallery('packaging')" class="gallery-filter-btn bg-white hover:bg-amber-50/50 text-gray-700 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-amber-100 transition-all">Packaging</button>
+                <button onclick="filterGallery('factory')" class="gallery-filter-btn bg-white hover:bg-amber-50/50 text-gray-700 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-amber-100 transition-all">Factory Environment</button>
+            </div>
+
+            <!-- Gallery Grid (Pure CSS Responsive Cards with premium descriptive placeholders) -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+                
+                <!-- Card 1 -->
+                <div class="gallery-item bg-white rounded-3xl overflow-hidden border border-amber-100 shadow-sm flex flex-col justify-between" data-category="machinery">
+                    <div class="h-56 bg-gradient-to-br from-spiceGreen/30 to-amber-100 flex items-center justify-center text-7xl select-none">🏭</div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] bg-green-50 text-spiceGreen font-bold px-2 py-0.5 rounded uppercase">Machinery</span>
+                        <h4 class="font-bold text-gray-950 font-serif">Sortex Sorting Chambers</h4>
+                        <p class="text-xs text-gray-500">Dual optical cameras monitoring cumin and coriander seed streams at high velocities.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="gallery-item bg-white rounded-3xl overflow-hidden border border-amber-100 shadow-sm flex flex-col justify-between" data-category="factory">
+                    <div class="h-56 bg-gradient-to-br from-spiceRed/30 to-amber-100 flex items-center justify-center text-7xl select-none">🏪</div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] bg-red-50 text-spiceRed font-bold px-2 py-0.5 rounded uppercase">Factory Environment</span>
+                        <h4 class="font-bold text-gray-950 font-serif">Aseptic Processing Hall</h4>
+                        <p class="text-xs text-gray-500">Milling rooms with positive pressure ventilation and active sanitization protocols.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="gallery-item bg-white rounded-3xl overflow-hidden border border-amber-100 shadow-sm flex flex-col justify-between" data-category="packaging">
+                    <div class="h-56 bg-gradient-to-br from-amber-200/30 to-amber-100 flex items-center justify-center text-7xl select-none">🎒</div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] bg-amber-50 text-amber-800 font-bold px-2 py-0.5 rounded uppercase">Packaging</span>
+                        <h4 class="font-bold text-gray-950 font-serif">Multi-layer Aroma Sealed Pouches</h4>
+                        <p class="text-xs text-gray-500">Sealed in food-grade foil packaging barrier bags to lock volatile oils inside.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="gallery-item bg-white rounded-3xl overflow-hidden border border-amber-100 shadow-sm flex flex-col justify-between" data-category="products">
+                    <div class="h-56 bg-gradient-to-br from-spiceRed/20 to-spiceGold/20 flex items-center justify-center text-7xl select-none">🌶️</div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] bg-red-50 text-spiceRed font-bold px-2 py-0.5 rounded uppercase">Products</span>
+                        <h4 class="font-bold text-gray-950 font-serif">Fresh Ground Red Chilli Batch</h4>
+                        <p class="text-xs text-gray-500">Vibrant stem-less red chili powder ready for quality lab test verification.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="gallery-item bg-white rounded-3xl overflow-hidden border border-amber-100 shadow-sm flex flex-col justify-between" data-category="machinery">
+                    <div class="h-56 bg-gradient-to-br from-spiceGreen/20 to-spiceGold/20 flex items-center justify-center text-7xl select-none">❄️</div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] bg-green-50 text-spiceGreen font-bold px-2 py-0.5 rounded uppercase">Machinery</span>
+                        <h4 class="font-bold text-gray-950 font-serif">Cold Pulverizer Chambers</h4>
+                        <p class="text-xs text-gray-500">Slow-speed cryogenic grinding installation protecting delicate linalool & thymol volatile elements.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="gallery-item bg-white rounded-3xl overflow-hidden border border-amber-100 shadow-sm flex flex-col justify-between" data-category="products">
+                    <div class="h-56 bg-gradient-to-br from-yellow-100 to-amber-100 flex items-center justify-center text-7xl select-none">💛</div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] bg-amber-50 text-amber-800 font-bold px-2 py-0.5 rounded uppercase">Products</span>
+                        <h4 class="font-bold text-gray-950 font-serif">Curcumin-Rich Turmeric Grains</h4>
+                        <p class="text-xs text-gray-500">Pure fingers sourced from elite Maharashtra farms ready for clean room grinding.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM PROFESSIONAL FOOTER -->
+    <footer class="bg-gray-950 text-gray-400 text-xs pt-16 pb-8 border-t-4 border-spiceRed">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-spiceRed text-white p-2.5 rounded-full font-bold">🌶️</div>
+                    <span class="text-lg font-extrabold text-white font-serif tracking-tight">PATEL SAHAB SPICES</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">
+                    100% Pure, authentic ground spice powders and herbal formulations processed scientifically without added dyes, dynamic chemical enhancements, or metallic residues.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="https://www.instagram.com/patelsahabspices/" target="_blank" class="p-2 bg-gray-900 hover:bg-spiceRed text-white rounded-lg transition-colors">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Navigation</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="index.html" class="hover:text-spiceGold transition-colors">Home Page</a></li>
+                    <li><a href="about.html" class="hover:text-spiceGold transition-colors">About Patel Sahab</a></li>
+                    <li><a href="products.html" class="hover:text-spiceGold transition-colors">Premium Spices Range</a></li>
+                    <li><a href="quality.html" class="hover:text-spiceGold transition-colors">Quality Assurance</a></li>
+                    <li><a href="blog.html" class="hover:text-spiceGold transition-colors">SEO Guides & Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Enterprise</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="wholesale.html" class="hover:text-spiceGold transition-colors">B2B Wholesale Portal</a></li>
+                    <li><a href="infrastructure.html" class="hover:text-spiceGold transition-colors">Processing machinery</a></li>
+                    <li><a href="faqs.html" class="hover:text-spiceGold transition-colors">Frequently Queries (FAQs)</a></li>
+                    <li><a href="contact.html" class="hover:text-spiceGold transition-colors">Global Contact Offices</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Business Presence</h4>
+                <p class="leading-relaxed">Patel Sahab Spices (Patel Masala)</p>
+                <div class="space-y-1 text-gray-500">
+                    <p>📍 [Your City, Your State]</p>
+                    <p>✉ info@patelsahabspices.com</p>
+                    <p>📞 Phone: +91 99999 99999</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 gap-4">
+            <p>© 2026 Patel Sahab Spices (Patel Masala). All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="admin.html" class="hover:text-white transition-colors">Live Admin System</a>
+                <span>•</span>
+                <span class="hover:text-white transition-colors cursor-pointer">Terms & Logistics</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC FOR FILTERING -->
+    <script>
+        // Mobile drawer toggle script
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        // Filter Gallery items based on category selection
+        function filterGallery(category) {
+            // Update active states on buttons
+            const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+            filterBtns.forEach(btn => {
+                btn.classList.remove('bg-spiceRed', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-amber-100');
+            });
+
+            // Set active color to clicked button
+            const clickedBtn = Array.from(filterBtns).find(btn => btn.getAttribute('onclick').includes(category));
+            if (clickedBtn) {
+                clickedBtn.classList.remove('bg-white', 'text-gray-700', 'border', 'border-amber-100');
+                clickedBtn.classList.add('bg-spiceRed', 'text-white', 'shadow-sm');
+            }
+
+            // Hide/Show matching grid items
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (category === 'all' || itemCat === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="spices-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Queries (FAQs) | Patel Sahab Spices - Premium Pure Flavors</title>
+    
+    <!-- Tailwind CSS for high-end modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spiceRed: '#A61B1B',
+                        spiceGold: '#E8A317',
+                        spiceGreen: '#1D5C42',
+                        creamBG: '#FFFDF9'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #A61B1B 0%, #7A1212 50%, #1D5C42 100%);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+        }
+        .accordion-content.open {
+            max-height: 1000px;
+            transition: max-height 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        }
+    </style>
+</head>
+<body class="bg-creamBG text-gray-800 font-sans selection:bg-spiceGold selection:text-white">
+
+    <!-- TOP HEADER BAR (Quick Contact & Updates) -->
+    <div class="bg-spiceRed text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    +91 99999 99999
+                </span>
+                <span class="hidden md:flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 00-2 2z"></path></svg>
+                    info@patelsahabspices.com
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-spiceGold text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider uppercase">100% Pure & Natural</span>
+                <a href="admin.html" class="hover:text-spiceGold transition-colors text-[11px] font-semibold underline">Admin Panel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION HEADER -->
+    <header class="bg-white border-b border-amber-50 sticky top-0 z-40 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Brand Logo: Patel Sahab Spices -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="bg-spiceRed text-white p-2.5 rounded-full shadow-md flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3l9 9-9 9M12 3L3 12l9 9"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-2xl font-extrabold tracking-tight text-spiceRed font-serif leading-none">PATEL SAHAB</span>
+                    <span class="text-[10px] tracking-[0.25em] font-bold text-gray-400 uppercase">Premium Spices & Herbs</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden lg:flex items-center space-x-1 font-semibold text-gray-700 text-sm">
+                <a href="index.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Home</a>
+                <a href="about.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">About Us</a>
+                <a href="products.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Our Spices</a>
+                <a href="quality.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Quality Standards</a>
+                <a href="infrastructure.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Infrastructure</a>
+                <a href="blog.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Spice Blog</a>
+                <a href="faqs.html" class="px-3 py-2 text-spiceRed bg-amber-50/50 rounded-lg">FAQs</a>
+                <a href="contact.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="wholesale.html" class="bg-spiceRed hover:bg-red-800 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
+                    Wholesale / B2B RFQ
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="menu-toggle" class="lg:hidden p-2 rounded-md hover:bg-gray-100 text-gray-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-amber-50 px-4 py-4 space-y-2 shadow-inner">
+            <a href="index.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Home</a>
+            <a href="about.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">About Us</a>
+            <a href="products.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Our Spices</a>
+            <a href="quality.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Quality Standards</a>
+            <a href="infrastructure.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Infrastructure</a>
+            <a href="blog.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Spice Blog</a>
+            <a href="faqs.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-bold text-spiceRed bg-amber-50">FAQs</a>
+            <a href="contact.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Contact Us</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col space-y-2">
+                <a href="wholesale.html" class="w-full bg-spiceRed text-white text-center py-3 rounded-xl text-sm font-bold shadow-md">B2B Sourcing Inquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO COVER STRIP -->
+    <section class="relative overflow-hidden luxury-gradient text-white py-16 lg:py-24 px-4">
+        <div class="absolute inset-0 bg-opacity-10 bg-[radial-gradient(#E8A317_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
+            <span class="text-spiceGold text-xs font-bold tracking-[0.25em] uppercase block">Clear Answers for Better Decisions</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight">
+                Frequently Answered Queries
+            </h1>
+            <p class="text-sm md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                Whether you are a B2C customer looking for family pack purity, or a B2B export manager looking for container bulk timelines—we have mapped out clear responses for you below.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQS ACCORDION CONTAINER -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+            
+            <!-- Category 1: General & Processing Technology -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-serif font-bold text-spiceRed border-b-2 border-amber-100 pb-2 flex items-center gap-2">
+                    <span>⚙️</span> General & Grinding Technology
+                </h3>
+                
+                <div class="space-y-3">
+                    <!-- Accordion Item 1 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-1')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>How does Patel Sahab Spices preserve natural aroma during milling?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-1">+</span>
+                        </button>
+                        <div id="content-faq-1" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>Standard high-speed industrial grinding mills generate high frictional temperatures (often reaching 60°C to 70°C). This extreme heat evaporates the volatile essential oils (like curcumin in turmeric or linalool in coriander) responsible for color and aroma.</p>
+                                <p>At Patel Sahab Spices, we utilize custom-engineered low-speed <strong>Cold Grinding Technology</strong>. Grinding chambers remain under 30°C. This safely seals 100% of the active medicinal volatile elements and aroma locked inside the packaging layers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-2')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>Are your ground powders completely free of added starch and dyes?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-2">+</span>
+                        </button>
+                        <div id="content-faq-2" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>Absolutely. We operate under a strict <strong>100% Clean Label Commitment</strong>. Typical commercial brands add dynamic starches (such as boiled potato or wheat flour) to inflate volume, alongside toxic color enhancers (like Sudan Red or Lead Chromate) to hide dull colors.</p>
+                                <p>Our spices undergo rigorous lab testing verifying absolute zero added starch, zero chemical preservatives, and zero color dyes. What you see and smell is 100% ground nature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: B2B, Bulk & Custom Orders -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-serif font-bold text-spiceGreen border-b-2 border-amber-100 pb-2 flex items-center gap-2">
+                    <span>📦</span> B2B, Bulk Purchases & Private Labeling
+                </h3>
+
+                <div class="space-y-3">
+                    <!-- Accordion Item 3 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-3')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>What is the Minimum Order Quantity (MOQ) for wholesale buyers?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-3">+</span>
+                        </button>
+                        <div id="content-faq-3" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>Our wholesale order metrics are divided into two clear segments:</p>
+                                <ul class="list-disc pl-4 space-y-1">
+                                    <li><strong>Domestic Wholesale:</strong> Minimum threshold starts from 250 Kilograms for wholesale distributor pricing packs.</li>
+                                    <li><strong>International Export:</strong> MOQ is set starting from 1 Metric Ton (MT) for single products or combined assortments.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-4')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>Do you offer OEM private-label packaging under our own brand names?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-4">+</span>
+                        </button>
+                        <div id="content-faq-4" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>Yes, we offer advanced private-label solutions (white labeling). We package, print, and fulfill spices under your specific brands in diverse custom formats: stand-up zipper pouches, hermetic barrier foils, or high-density glass/plastic jars. We support the design, processing, and shipping phases transparently.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-5')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>How can a commercial buyer request physical spice samples?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-5">+</span>
+                        </button>
+                        <div id="content-faq-5" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>We encourage thorough physical verification of our spices before making commercial commitments. Go to our <a href="wholesale.html" class="text-spiceRed font-bold underline">Wholesale RFQ Page</a>, submit your contact and requirements details, and select 'Request Sample Kit'. Once verified, we will dispatch sample tubes with third-party lab test reports to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Logistics & Testing Compliance -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-serif font-bold text-[#5C2D16] border-b-2 border-amber-100 pb-2 flex items-center gap-2">
+                    <span>🔬</span> Logistics, Quality Controls & Testing
+                </h3>
+
+                <div class="space-y-3">
+                    <!-- Accordion Item 6 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-6')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>How do you guarantee spices are free from heavy metal wear dust?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-6">+</span>
+                        </button>
+                        <div id="content-faq-6" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>Milling machinery parts wear down over time, creating a risk of fine iron dust contamination. Every gram of ground spice at Patel Sahab Spices passes through high-density rare-earth magnets and advanced electronic metal-detector coils to automatically isolate and discard any heavy-metal traces.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 7 -->
+                    <div class="bg-creamBG rounded-2xl border border-amber-50 shadow-sm overflow-hidden">
+                        <button onclick="toggleAccordion('faq-7')" class="w-full px-6 py-4 flex justify-between items-center text-left text-xs sm:text-sm font-extrabold text-gray-950 focus:outline-none hover:bg-amber-50/30">
+                            <span>What are your standard shipping timelines for export cargos?</span>
+                            <span class="text-spiceRed text-lg font-bold transition-transform duration-300" id="icon-faq-7">+</span>
+                        </button>
+                        <div id="content-faq-7" class="accordion-content">
+                            <div class="px-6 pb-5 pt-1 text-xs text-gray-500 leading-relaxed space-y-2">
+                                <p>Our shipping timeline depends directly on the volume parameters and custom milling specs requested. Typically, full container load cargos (FCL) are processed, sanitized, packed, and loaded at ports within 15 to 21 business days from initial deposit clearance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CONTACT CTA BOX -->
+    <section class="py-12 bg-creamBG px-4 border-t border-amber-50 text-center">
+        <div class="max-w-2xl mx-auto space-y-6">
+            <span class="text-3xl block">💬</span>
+            <h3 class="text-2xl font-serif font-extrabold text-gray-900">Have a Question not listed above?</h3>
+            <p class="text-xs text-gray-400">Our support coordinators are online over live messaging lines to resolve your queries instantly.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="initiateLiveWhatsApp()" class="bg-[#25D366] text-white font-extrabold text-xs px-6 py-3 rounded-xl hover:bg-green-600 transition-all uppercase flex items-center gap-1.5 focus:outline-none shadow-md">
+                    <span>Chat on WhatsApp Support</span>
+                </button>
+                <a href="contact.html" class="bg-gray-900 hover:bg-gray-950 text-white font-extrabold text-xs px-6 py-3 rounded-xl uppercase flex items-center justify-center shadow-md">
+                    Submit Inquiry Form
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM PROFESSIONAL FOOTER -->
+    <footer class="bg-gray-950 text-gray-400 text-xs pt-16 pb-8 border-t-4 border-spiceRed">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-spiceRed text-white p-2.5 rounded-full font-bold">🌶️</div>
+                    <span class="text-lg font-extrabold text-white font-serif tracking-tight">PATEL SAHAB SPICES</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">
+                    100% Pure, authentic ground spice powders and herbal formulations processed scientifically without added dyes, dynamic chemical enhancements, or metallic residues.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="https://www.instagram.com/patelsahabspices/" target="_blank" class="p-2 bg-gray-900 hover:bg-spiceRed text-white rounded-lg transition-colors">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Navigation</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="index.html" class="hover:text-spiceGold transition-colors">Home Page</a></li>
+                    <li><a href="about.html" class="hover:text-spiceGold transition-colors">About Patel Sahab</a></li>
+                    <li><a href="products.html" class="hover:text-spiceGold transition-colors">Premium Spices Range</a></li>
+                    <li><a href="quality.html" class="hover:text-spiceGold transition-colors">Quality Assurance</a></li>
+                    <li><a href="blog.html" class="hover:text-spiceGold transition-colors">SEO Guides & Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Enterprise</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="wholesale.html" class="hover:text-spiceGold transition-colors">B2B Wholesale Portal</a></li>
+                    <li><a href="infrastructure.html" class="hover:text-spiceGold transition-colors">Processing machinery</a></li>
+                    <li><a href="faqs.html" class="hover:text-spiceGold transition-colors">Frequently Queries (FAQs)</a></li>
+                    <li><a href="contact.html" class="hover:text-spiceGold transition-colors">Global Contact Offices</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Business Presence</h4>
+                <p class="leading-relaxed">Patel Sahab Spices (Patel Masala)</p>
+                <div class="space-y-1 text-gray-500">
+                    <p>📍 [Your City, Your State]</p>
+                    <p>✉ info@patelsahabspices.com</p>
+                    <p>📞 Phone: +91 99999 99999</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 gap-4">
+            <p>© 2026 Patel Sahab Spices (Patel Masala). All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="admin.html" class="hover:text-white transition-colors">Live Admin System</a>
+                <span>•</span>
+                <span class="hover:text-white transition-colors cursor-pointer">Terms & Logistics</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FAQ JAVASCRIPT ANIMATIONS -->
+    <script>
+        // Custom Accordion Toggle Logic with Smooth height transit
+        function toggleAccordion(faqId) {
+            const content = document.getElementById(`content-${faqId}`);
+            const icon = document.getElementById(`icon-${faqId}`);
+            
+            // If already open, close it
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close any other open accordions in the same category first (optional, for accordion effect)
+                // Open selected accordion
+                content.classList.add('open');
+                icon.textContent = '−';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        function initiateLiveWhatsApp() {
+            const text = "Namaskar Patel Sahab! I am reading the FAQ portal and have custom queries regarding wholesale order processes.";
+            window.open(`https://wa.me/919999999999?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // Mobile drawer toggle script
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+    </script>
+</body>
+</html>

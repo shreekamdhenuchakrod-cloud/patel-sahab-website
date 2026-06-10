@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="spices-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Patel Sahab Spices - Our Journey of Purity</title>
+    
+    <!-- Tailwind CSS for high-end modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spiceRed: '#A61B1B',
+                        spiceGold: '#E8A317',
+                        spiceGreen: '#1D5C42',
+                        creamBG: '#FFFDF9'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Smooth scrolling and transitions */
+        html {
+            scroll-behavior: smooth;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #A61B1B 0%, #7A1212 50%, #1D5C42 100%);
+        }
+    </style>
+</head>
+<body class="bg-creamBG text-gray-800 font-sans selection:bg-spiceGold selection:text-white">
+
+    <!-- TOP HEADER BAR (Quick Contact & Updates) -->
+    <div class="bg-spiceRed text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    +91 99999 99999
+                </span>
+                <span class="hidden md:flex items-center">
+                    <svg class="w-3.5 h-3.5 mr-1 text-spiceGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 00-2 2z"></path></svg>
+                    info@patelsahabspices.com
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-spiceGold text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider uppercase">100% Pure & Natural</span>
+                <a href="admin.html" class="hover:text-spiceGold transition-colors text-[11px] font-semibold underline">Admin Panel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION HEADER -->
+    <header class="bg-white border-b border-amber-50 sticky top-0 z-40 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Brand Logo: Patel Sahab Spices -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="bg-spiceRed text-white p-2.5 rounded-full shadow-md flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18M12 3l9 9-9 9M12 3L3 12l9 9"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-2xl font-extrabold tracking-tight text-spiceRed font-serif leading-none">PATEL SAHAB</span>
+                    <span class="text-[10px] tracking-[0.25em] font-bold text-gray-400 uppercase">Premium Spices & Herbs</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden lg:flex items-center space-x-1 font-semibold text-gray-700 text-sm">
+                <a href="index.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Home</a>
+                <a href="about.html" class="px-3 py-2 text-spiceRed bg-amber-50/50 rounded-lg">About Us</a>
+                <a href="products.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Our Spices</a>
+                <a href="quality.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Quality Standards</a>
+                <a href="infrastructure.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Infrastructure</a>
+                <a href="blog.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Spice Blog</a>
+                <a href="faqs.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">FAQs</a>
+                <a href="contact.html" class="px-3 py-2 hover:text-spiceRed hover:bg-gray-50 rounded-lg transition-all">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="wholesale.html" class="bg-spiceRed hover:bg-red-800 text-white text-xs font-bold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
+                    Wholesale / B2B RFQ
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button id="menu-toggle" class="lg:hidden p-2 rounded-md hover:bg-gray-100 text-gray-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-amber-50 px-4 py-4 space-y-2 animate-fade-in shadow-inner">
+            <a href="index.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Home (होम पेज)</a>
+            <a href="about.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-bold text-spiceRed bg-amber-50">About Us (हमारे बारे में)</a>
+            <a href="products.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Our Spices (हमारे मसाले)</a>
+            <a href="quality.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Quality Standards (गुणवत्ता)</a>
+            <a href="infrastructure.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Infrastructure (फैक्टरी)</a>
+            <a href="blog.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Spice Blog (ब्लॉग)</a>
+            <a href="faqs.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">FAQs (सवाल-जवाब)</a>
+            <a href="contact.html" class="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-amber-50/50">Contact Us (संपर्क करें)</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col space-y-2">
+                <a href="wholesale.html" class="w-full bg-spiceRed text-white text-center py-3 rounded-xl text-sm font-bold shadow-md">B2B Sourcing Inquiry</a>
+                <a href="https://wa.me/919999999999?text=Hello%20Patel%20Sahab%20Spices%20Team!" target="_blank" class="w-full bg-[#25D366] text-white text-center py-3 rounded-xl text-sm font-bold flex items-center justify-center space-x-2">
+                    <span>Order via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT US HERO BANNER -->
+    <section class="relative overflow-hidden luxury-gradient text-white py-16 lg:py-24 px-4">
+        <div class="absolute inset-0 bg-opacity-10 bg-[radial-gradient(#E8A317_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
+            <span class="text-spiceGold text-xs font-bold tracking-[0.25em] uppercase block">Our Roots & Vision</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold tracking-tight">
+                About Patel Sahab Spices
+            </h1>
+            <p class="text-sm md:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                Discover the philosophy of absolute purity, modern hygiene standards, and traditional milling methodologies that drive our premium spice formulations.
+            </p>
+        </div>
+    </section>
+
+    <!-- COMPANY STORY SECTION -->
+    <section class="py-16 md:py-24 bg-white px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Side - Visual Graphic -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-80 h-80 rounded-3xl overflow-hidden border-4 border-spiceGold/30 p-2 bg-creamBG shadow-xl">
+                    <div class="w-full h-full rounded-2xl bg-gradient-to-br from-spiceGreen to-spiceRed flex flex-col justify-center items-center text-white p-6 text-center space-y-4">
+                        <span class="text-5xl animate-pulse">🌾</span>
+                        <h3 class="text-xl font-bold font-serif text-spiceGold">Pure Indian Spices</h3>
+                        <p class="text-xs text-gray-100">Our state-of-the-art facility ensures hygienically processed, pristine spice batches for domestic and international markets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Content Description -->
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-spiceRed text-xs font-bold tracking-[0.2em] uppercase block">The Promise of Purity</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-extrabold text-gray-900">Crafting Genuine Indian Flavors</h2>
+                <div class="w-16 h-1 bg-spiceGold rounded-full"></div>
+                
+                <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                    <strong>Patel Sahab Spices (Patel Masala)</strong> is widely celebrated for producing 100% pure, authentic, and completely natural masalas. We strictly believe that real food doesn't need chemical enhancers, added colors, artificial dye starch, or synthetic preservatives to look or taste delicious.
+                </p>
+                
+                <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                    Our focus is placed entirely on the selection of pristine raw ingredients directly from specialized farming zones, ensuring they undergo rigorous mechanical cleaning. Using our smart freshness-retaining packaging, we guarantee that the aroma, essential oils, and flavor intensity remain locked in for an extended duration.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION, MISSION, & CORE VALUES SECTION -->
+    <section class="py-16 md:py-24 bg-creamBG border-t border-b border-amber-50 px-4">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Grid for Vision & Mission -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Vision Card -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl border border-amber-100 shadow-md space-y-4">
+                    <span class="text-4xl p-2 bg-amber-50 rounded-xl inline-block">👁️</span>
+                    <h3 class="text-2xl font-serif font-bold text-gray-900">Our Vision</h3>
+                    <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                        To become a trusted global name in premium Indian spices by preserving authentic regional spice tastes, promoting healthier culinary standards, and setting a benchmark for 100% clean-label food exports.
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl border border-amber-100 shadow-md space-y-4">
+                    <span class="text-4xl p-2 bg-amber-50 rounded-xl inline-block">🚀</span>
+                    <h3 class="text-2xl font-serif font-bold text-gray-900">Our Mission</h3>
+                    <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                        To deliver premium, unadulterated ground spices and authentic custom blends directly to global kitchens through hygienic, eco-friendly processing practices and advanced freshness-locking technology.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Core Values Title -->
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-spiceRed text-xs font-bold tracking-[0.2em] uppercase block">Guiding Principles</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900">Our Non-Negotiable Core Values</h2>
+                <div class="w-16 h-1 bg-spiceGold mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Core Values Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <!-- Value 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-50 shadow-sm text-center space-y-3">
+                    <span class="text-3xl block">🏆</span>
+                    <h4 class="font-extrabold text-gray-900 text-sm">Quality Assurance</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Strict zero-tolerance policy against lower-grade seeds or dusty raw inputs.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-50 shadow-sm text-center space-y-3">
+                    <span class="text-3xl block">🤝</span>
+                    <h4 class="font-extrabold text-gray-900 text-sm">Transparency & Trust</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Complete openness regarding botanical specs, tests, and clean-label processes.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-50 shadow-sm text-center space-y-3">
+                    <span class="text-3xl block">🌟</span>
+                    <h4 class="font-extrabold text-gray-900 text-sm">100% Purity</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">No added dyes, preservatives, starch fillers, or dynamic chemicals.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-50 shadow-sm text-center space-y-3">
+                    <span class="text-3xl block">🏺</span>
+                    <h4 class="font-extrabold text-gray-900 text-sm">Tradition</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Employing cool grinding to safeguard original flavor oils and health properties.</p>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-50 shadow-sm text-center space-y-3">
+                    <span class="text-3xl block">❤️</span>
+                    <h4 class="font-extrabold text-gray-900 text-sm">Client Satisfaction</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Offering robust logistical speed and personalized bulk order packages.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) -->
+    <section class="py-16 bg-white text-center px-4">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <h2 class="text-2xl md:text-3xl font-serif font-extrabold text-gray-900">Want to Partner with Patel Sahab Spices?</h2>
+            <p class="text-xs md:text-sm text-gray-500 leading-relaxed">
+                Whether you are looking to become a regional distributor, retail dealer, or importing organic quality spices, our team is equipped to process your custom specifications instantly.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="wholesale.html" class="bg-spiceRed hover:bg-red-800 text-white font-extrabold px-6 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-md">
+                    Apply For Distributorship
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-gray-200 text-gray-700 hover:border-spiceRed hover:text-spiceRed font-extrabold px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-all">
+                    Reach Out Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM PROFESSIONAL FOOTER -->
+    <footer class="bg-gray-950 text-gray-400 text-xs pt-16 pb-8 border-t-4 border-spiceRed">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <!-- Footer Col 1: Brand Info -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-spiceRed text-white p-2.5 rounded-full font-bold">🌶️</div>
+                    <span class="text-lg font-extrabold text-white font-serif tracking-tight">PATEL SAHAB SPICES</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">
+                    100% Pure, authentic ground spice powders and herbal formulations processed scientifically without added dyes, dynamic chemical enhancements, or metallic residues.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="https://www.instagram.com/patelsahabspices/" target="_blank" class="p-2 bg-gray-900 hover:bg-spiceRed text-white rounded-lg transition-colors">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Col 2: Quick Links -->
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Navigation</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="index.html" class="hover:text-spiceGold transition-colors">Home Page</a></li>
+                    <li><a href="about.html" class="hover:text-spiceGold transition-colors">About Patel Sahab</a></li>
+                    <li><a href="products.html" class="hover:text-spiceGold transition-colors">Premium Spices Range</a></li>
+                    <li><a href="quality.html" class="hover:text-spiceGold transition-colors">Quality Assurance</a></li>
+                    <li><a href="blog.html" class="hover:text-spiceGold transition-colors">SEO Guides & Blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 3: Business Support -->
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Enterprise</h4>
+                <ul class="space-y-2 font-medium">
+                    <li><a href="wholesale.html" class="hover:text-spiceGold transition-colors">B2B Wholesale Portal</a></li>
+                    <li><a href="infrastructure.html" class="hover:text-spiceGold transition-colors">Processing machinery</a></li>
+                    <li><a href="faqs.html" class="hover:text-spiceGold transition-colors">Frequently Queries (FAQs)</a></li>
+                    <li><a href="contact.html" class="hover:text-spiceGold transition-colors">Global Contact Offices</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 4: Reach Us -->
+            <div class="space-y-4">
+                <h4 class="text-white font-serif font-bold text-sm border-b border-gray-900 pb-2">Business Presence</h4>
+                <p class="leading-relaxed">Patel Sahab Spices (Patel Masala)</p>
+                <div class="space-y-1 text-gray-500">
+                    <p>📍 [Your City, Your State]</p>
+                    <p>✉ info@patelsahabspices.com</p>
+                    <p>📞 Phone: +91 99999 99999</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright declaration strip -->
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 gap-4">
+            <p>© 2026 Patel Sahab Spices (Patel Masala). All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="admin.html" class="hover:text-white transition-colors">Live Admin System</a>
+                <span>•</span>
+                <span class="hover:text-white transition-colors cursor-pointer">Terms & Logistics</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MOBILE DRAWER SCRIPT LOGIC -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle hamburger icon between open (✕) and close (≡)
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+    </script>
+</body>
+</html>
